@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/work_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dim_large"
+    android:clickable="true">
+
+    <TextView android:id="@+id/work_company"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:singleLine="true"
+        tools:text="Company Name"/>
+    <TextView android:id="@+id/work_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="@color/secondary_text"
+        android:layout_toLeftOf="@+id/work_hyphen_date"
+        android:singleLine="true"
+        tools:text="Present"/>
+    <TextView android:id="@+id/work_hyphen_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="@color/secondary_text"
+        android:layout_toLeftOf="@+id/work_end_date"
+        android:singleLine="true"
+        android:text="-"/>
+    <TextView android:id="@+id/work_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textColor="@color/secondary_text"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        tools:text="Present"/>
+    <TextView android:id="@+id/work_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/work_end_date"
+        android:textColor="@color/secondary_text"
+        android:layout_alignParentRight="true"
+        android:singleLine="true"
+        tools:text="San Jose, CA"/>
+    <TextView android:id="@+id/work_position"
+        android:layout_below="@id/work_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_dark"
+        android:singleLine="true"
+        tools:text="Position"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/work_position"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout android:id="@+id/work_highlights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/work_position"
+        android:layout_marginLeft="@dimen/dim_xl"
+        tools:text="Technical lead for the mobile environment in cross functional team environment"/>
+</RelativeLayout>
