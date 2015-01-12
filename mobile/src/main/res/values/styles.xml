@@ -13,9 +13,13 @@
     <color name="color_contrast_inverse">#000000</color>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="AppTheme.Base">
         <!-- Customize your theme here. -->
         <item name="android:textViewStyle">@style/TextViewStyle</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
     </style>
 
     <style name="TextViewStyle" parent="android:Widget.TextView">
